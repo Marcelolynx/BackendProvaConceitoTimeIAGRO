@@ -1,3 +1,4 @@
+using System.Collections;
 using Books.Domain.Entities;
 using Xunit;
 namespace Books.Tests.Tests.BooksDomain.BookTests;
@@ -5,15 +6,25 @@ namespace Books.Tests.Tests.BooksDomain.BookTests;
 public class CalculateFeeTests
 {
     [Fact]
-    public void CalculateFee_ReturnsCorrectValue()
+    public void CalculateFee_ShouldCalculateCorrectly()
     {
         // Arrange
-        double price = 100;
-        double expectedFee = 20;
-        var target = new Book(price);
+        int id = 1;
+        string name = "Example Book";
+        double price = 100.0;
+
+        string published = "test";
+        string author = "author name";
+        int pageCount = 0;
+        List<string> illustrator = new List<string>();
+        List<string> genres = new List<string>();
+        
+        var specifications = new Specifications(published,  author,  pageCount,   illustrator,   genres); 
+        var book = new Book(id, name, price, specifications);
+        double expectedFee = (price * 20) / 100;
 
         // Act
-        double actualFee = target.CalculateFee();
+        double actualFee = book.CalculateFee();
 
         // Assert
         Assert.Equal(expectedFee, actualFee);

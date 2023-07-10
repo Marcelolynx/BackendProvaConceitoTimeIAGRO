@@ -6,7 +6,7 @@ public class SpecificationsDTO
 
     public string Author { get; set; }
 
-    public string PageCount { get; set; }
+    public int PageCount { get; set; }
 
     public List<string> Illustrator { get; set; }
 

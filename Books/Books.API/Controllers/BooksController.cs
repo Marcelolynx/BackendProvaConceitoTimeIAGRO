@@ -28,6 +28,10 @@ public class BooksController : ControllerBase
         {
             books.OrderByDescending(b => b.Price);
         }
+        else
+        {
+            return BadRequest("O parâmetro 'sortBy' deve ser 'asc' ou 'desc'.");
+        }
         return Ok(books);
     }
     
