@@ -11,7 +11,8 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ### 📋 Pré-requisitos
 
-Para rodar localmente esse projeto necessita do dotnet na sua versão 6.0 ou superior
+Para rodar localmente esse projeto necessita do dotnet na sua versão 6.0 ou superior, utilize o comando abaixo para
+se certificar da versão instalada em sua máquina.
 
 ```
 dotnet --version

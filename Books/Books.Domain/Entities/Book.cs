@@ -21,6 +21,11 @@ public class Book
         Fee = CalculateFee();
     }
 
-    private double CalculateFee() => (Price * 20) / 100;
+    public Book(double price)
+    {
+        Price = price;
+    }
+
+    public double CalculateFee() => (Price * 20) / 100;
 
 }

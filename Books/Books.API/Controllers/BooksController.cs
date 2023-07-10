@@ -16,9 +16,18 @@ public class BooksController : ControllerBase
 
     [HttpGet]
     [Route("")]
-    public IActionResult GetBooks()
+    public IActionResult GetBooks(string sortBy = "asc")
     {
         var books = _bookService.GetBooks();
+        
+        if (sortBy.ToLower() == "asc")
+        {
+            books.OrderBy(b => b.Price);
+        }
+        else if (sortBy.ToLower() == "desc")
+        {
+            books.OrderByDescending(b => b.Price);
+        }
         return Ok(books);
     }
     
