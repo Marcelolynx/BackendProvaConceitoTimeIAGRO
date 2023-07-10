@@ -1,20 +1,40 @@
-Um cliente tem necessidade de buscar livros em um catálogo. Esse cliente quer ler e buscar esse catálogo de um arquivo JSON, e esse arquivo não pode ser modificado. Então com essa informação, é preciso desenvolver:
 
-- Criar uma API para buscar produtos no arquivo JSON disponibilizado.
-- Que seja possível buscar livros por suas especificações(autor, nome do livro ou outro atributo)
-- É preciso que o resultado possa ser ordenado pelo preço.(asc e desc)
-- Disponibilizar um método que calcule o valor do frete em 20% o valor do livro.
+# Projeto Books
 
-Será avaliado no desafio:
+Esse projeto foi feito para avaliação do time de desenvolvimento da Miltec
 
-- Organização de código;
-- Manutenibilidade;
-- Princípios de orientação à objetos;
-- Padrões de projeto;
-- Teste unitário
+## 🚀 Começando
 
-Para nos enviar o código, crie um fork desse repositório e quando finalizar, mande um pull-request para nós.
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
+Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
-Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+### 📋 Pré-requisitos
+
+Para rodar localmente esse projeto necessita do dotnet na sua versão 6.0
+
+```
+Dar exemplos
+```
+
+### 🔧 Instalação
+
+Após o clone do projeto certifique que todas as dependências do mesmo estão instaladas na sua máquina (lista das libs utilizadas abaixo)
+
+
+Os endpoints da API consomem os dados do arquivo JSON {Books.json} que está na raiz do projeto da (1 - API).
+
+### ⌨️ Testes de unidade
+
+Exemplo de projeto para (5 - Testes) de unidade.
+
+```
+Foi feito um exemplo de teste unitario na classe de calculo do frete(Fee) para a classe Book
+```
+## 🛠️ Construído com
+
+Mencione as ferramentas que você usou para criar seu projeto
+
+* [dotnet-6.0](https://dotnet.microsoft.com/pt-br/download/dotnet/6.0) - O framework web da microsoft na sua versão 6.0
+* [JSON Newtonsoft](https://www.newtonsoft.com/json) - usado na serializaççao de objetos
+* [XUnit](https://xunit.net/) - Usada para testes de unidade
