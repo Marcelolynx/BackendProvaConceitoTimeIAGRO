@@ -7,7 +7,7 @@
             "Originally published":"November 25, 1864",
             "Author":"Jules Verne",
             "Page count": 183,
-            "Illustrator": "Édouard Riou",
+            "Illustrator": ["Édouard Riou"],
             "Genres": [
               "Science Fiction", 
               "Adventure fiction"
@@ -26,7 +26,7 @@
                "Édouard Riou", 
                "Alphonse-Marie-Adolphe de Neuville"
             ],
-            "Genres": "Adventure fiction"
+            "Genres": ["Adventure fiction"]
         }
     },
     {
@@ -59,7 +59,7 @@
             "Originally published":"November 18, 2016",
             "Author":"J. K. Rowling",
             "Page count": 457,
-            "Illustrator": "Cliff Wright",
+            "Illustrator": ["Cliff Wright"],
              "Genres": [
               "Fantasy Fiction",
               "Contemporary fantasy",
